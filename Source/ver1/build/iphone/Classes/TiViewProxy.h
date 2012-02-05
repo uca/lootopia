@@ -12,7 +12,7 @@
 
 @protocol TiKeyboardFocusableView
 
-#pragma mark Public lootopia APIs.
+#pragma mark Public ver1 APIs.
 - (void)focus:(id)args;
 - (void)blur:(id)args;
 

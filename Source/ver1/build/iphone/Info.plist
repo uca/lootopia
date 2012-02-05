@@ -22,7 +22,7 @@
 			<string>com.lootopia.ver1</string>
 			<key>CFBundleURLSchemes</key>
 			<array>
-				<string>lootopia</string>
+				<string>ver1</string>
 				
 			</array>
 		</dict>

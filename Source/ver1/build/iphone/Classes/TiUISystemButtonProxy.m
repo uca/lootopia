@@ -34,12 +34,12 @@ MAKE_SYSTEM_PROP(DONE,UIBarButtonSystemItemDone);
 MAKE_SYSTEM_PROP(FLEXIBLE_SPACE,UIBarButtonSystemItemFlexibleSpace);
 MAKE_SYSTEM_PROP(FIXED_SPACE,UIBarButtonSystemItemFixedSpace);
 
-MAKE_SYSTEM_PROP(ACTIVITY,UIlootopiaNativeItemSpinner);
-MAKE_SYSTEM_PROP(SPINNER,UIlootopiaNativeItemSpinner);
-MAKE_SYSTEM_PROP(INFO_LIGHT,UIlootopiaNativeItemInfoLight);
-MAKE_SYSTEM_PROP(INFO_DARK,UIlootopiaNativeItemInfoDark);
-MAKE_SYSTEM_PROP(DISCLOSURE,UIlootopiaNativeItemDisclosure);
-MAKE_SYSTEM_PROP(CONTACT_ADD,UIlootopiaNativeItemContactAdd);
+MAKE_SYSTEM_PROP(ACTIVITY,UIver1NativeItemSpinner);
+MAKE_SYSTEM_PROP(SPINNER,UIver1NativeItemSpinner);
+MAKE_SYSTEM_PROP(INFO_LIGHT,UIver1NativeItemInfoLight);
+MAKE_SYSTEM_PROP(INFO_DARK,UIver1NativeItemInfoDark);
+MAKE_SYSTEM_PROP(DISCLOSURE,UIver1NativeItemDisclosure);
+MAKE_SYSTEM_PROP(CONTACT_ADD,UIver1NativeItemContactAdd);
 
 
 @end

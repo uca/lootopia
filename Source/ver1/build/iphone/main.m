@@ -19,7 +19,7 @@ NSString * const TI_APPLICATION_GUID = @"7eef9001-7142-4a00-8b30-fc87bbda301a";
 BOOL const TI_APPLICATION_ANALYTICS = true;
 
 #ifdef TARGET_IPHONE_SIMULATOR
-NSString * const TI_APPLICATION_RESOURCE_DIR = @"/Users/nozawabit/Dropbox/Lootopia/Source/ver1/Resources";
+NSString * const TI_APPLICATION_RESOURCE_DIR = @"/Users/uca/Dropbox/Lootopia (1)/github/Source/ver1/Resources";
 #endif
 
 int main(int argc, char *argv[]) {

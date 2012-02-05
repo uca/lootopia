@@ -932,7 +932,7 @@
 		}
 	}
 	
-    // Since the header proxy is not properly attached to a view proxy in the _lootopia
+    // Since the header proxy is not properly attached to a view proxy in the _ver1
     // system, we have to reposition it here.  Resetting the table header view
     // is because there's a charming bug in UITableView that doesn't respect redisplay
     // for headers/footers when the frame changes.
@@ -1910,6 +1910,10 @@ if(ourTableView != tableview)	\
 	{
 		hasTitle = YES;
 		size+=[tableview sectionFooterHeight];
+	}
+	if ([tableview tableFooterView]!=nil)
+	{
+		size+=[tableview tableFooterView].frame.size.height;
 	}
 	if (hasTitle && size < DEFAULT_SECTION_HEADERFOOTER_HEIGHT)
 	{

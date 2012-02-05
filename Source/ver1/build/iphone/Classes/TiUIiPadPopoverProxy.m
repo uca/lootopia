@@ -1,6 +1,6 @@
 /**
  * Appcelerator Titanium Mobile
- * Copyright (c) 2010 by lootopia, Inc. All Rights Reserved.
+ * Copyright (c) 2010 by ver1, Inc. All Rights Reserved.
  * Licensed under the terms of the Apache Public License
  * Please see the LICENSE included with this distribution for details.
  * 
@@ -66,8 +66,9 @@
 
 -(void)updateContentSize
 {
-    CGSize newSize = [self contentSize];
-    [[self viewController] setContentSizeForViewInPopover:newSize];
+	CGSize newSize = [self contentSize];
+	BOOL animated_ = [[self popoverController] isPopoverVisible];
+	[[self viewController] setContentSizeForViewInPopover:newSize];
 	[self layoutChildren:NO];
 }
 

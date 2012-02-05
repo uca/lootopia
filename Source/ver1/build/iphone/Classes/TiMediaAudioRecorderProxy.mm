@@ -206,13 +206,13 @@
         NSLog(@"[WARN] Invalid mode for audio recorder... setting to default.");
         newMode = kAudioSessionCategory_RecordAudio;
     }
-	NSLog(@"[WARN] 'lootopia.Media.AudioRecorder.audioSessionMode' is deprecated; use 'lootopia.Media.audioSessionMode'");
+	NSLog(@"[WARN] 'ver1.Media.AudioRecorder.audioSessionMode' is deprecated; use 'ver1.Media.audioSessionMode'");
 	[[TiMediaAudioSession sharedSession] setSessionMode:newMode];
 }
 
 -(NSNumber*)audioSessionMode
 {
-	NSLog(@"[WARN] 'lootopia.Media.AudioRecorder.audioSessionMode' is deprecated; use 'lootopia.Media.audioSessionMode'");	
+	NSLog(@"[WARN] 'ver1.Media.AudioRecorder.audioSessionMode' is deprecated; use 'ver1.Media.audioSessionMode'");	
     return [NSNumber numberWithUnsignedInt:[[TiMediaAudioSession sharedSession] sessionMode]];
 }
 

@@ -16,7 +16,7 @@
 #import "KrollObject.h"
 #import "TiModule.h"
 
-@interface lootopiaObject : KrollObject {
+@interface ver1Object : KrollObject {
 @private
 	NSMutableDictionary *modules;
 	TiHost *host;
@@ -37,7 +37,7 @@
 	KrollContext *context;
 	NSDictionary *preload;
 	NSMutableDictionary *modules;
-	lootopiaObject *_lootopia;
+	ver1Object *_ver1;
 	BOOL shutdown;
     BOOL evaluationError;
 	NSMutableArray *proxies;

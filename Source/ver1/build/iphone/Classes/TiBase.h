@@ -52,7 +52,7 @@ extern "C" {
 	#define KMETHOD_DEBUG MEMORY_DEBUG
 #endif
 
-// in simulator we redefine to format for lootopia Developer console
+// in simulator we redefine to format for ver1 Developer console
 
 
 #define TI_INLINE static __inline__
@@ -286,7 +286,7 @@ if ((__x<__minX) || (__x>__maxX)) \
 #define DEFINE_EXCEPTIONS \
 - (void) throwException:(NSString *) reason subreason:(NSString*)subreason location:(NSString *)location\
 {\
-	NSString * exceptionName = [@"org.lootopia." stringByAppendingString:NSStringFromClass([self class])];\
+	NSString * exceptionName = [@"org.ver1." stringByAppendingString:NSStringFromClass([self class])];\
 	NSString * message = [NSString stringWithFormat:@"%@. %@ %@",reason,(subreason!=nil?subreason:@""),(location!=nil?location:@"")];\
 	NSLog(@"[ERROR] %@",message);\
 	if ([NSThread isMainThread]==NO) {\
@@ -296,7 +296,7 @@ if ((__x<__minX) || (__x>__maxX)) \
 \
 + (void) throwException:(NSString *) reason subreason:(NSString*)subreason location:(NSString *)location\
 {\
-	NSString * exceptionName = @"org.lootopia";\
+	NSString * exceptionName = @"org.ver1";\
 	NSString * message = [NSString stringWithFormat:@"%@. %@ %@",reason,(subreason!=nil?subreason:@""),(location!=nil?location:@"")];\
 	NSLog(@"[ERROR] %@",message);\
 	if ([NSThread isMainThread]==NO) {\
@@ -370,28 +370,28 @@ return map;\
 
  //MUST BE NEGATIVE, as it inhabits the same space as UIBarButtonSystemItem
 enum {
-	UIlootopiaNativeItemNone = -1, 
-	UIlootopiaNativeItemSpinner = -2,
-	UIlootopiaNativeItemProgressBar = -3,
+	UIver1NativeItemNone = -1, 
+	UIver1NativeItemSpinner = -2,
+	UIver1NativeItemProgressBar = -3,
 	
-	UIlootopiaNativeItemSlider = -4,
-	UIlootopiaNativeItemSwitch = -5,
-	UIlootopiaNativeItemMultiButton = -6,
-	UIlootopiaNativeItemSegmented = -7,
+	UIver1NativeItemSlider = -4,
+	UIver1NativeItemSwitch = -5,
+	UIver1NativeItemMultiButton = -6,
+	UIver1NativeItemSegmented = -7,
 	
-	UIlootopiaNativeItemTextView = -8,
-	UIlootopiaNativeItemTextField = -9,
-	UIlootopiaNativeItemSearchBar = -10,
+	UIver1NativeItemTextView = -8,
+	UIver1NativeItemTextField = -9,
+	UIver1NativeItemSearchBar = -10,
 	
-	UIlootopiaNativeItemPicker = -11,
-	UIlootopiaNativeItemDatePicker = -12,
+	UIver1NativeItemPicker = -11,
+	UIver1NativeItemDatePicker = -12,
 	
-	UIlootopiaNativeItemInfoLight = -13,
-	UIlootopiaNativeItemInfoDark = -14,
+	UIver1NativeItemInfoLight = -13,
+	UIver1NativeItemInfoDark = -14,
 	
-	UIlootopiaNativeItemDisclosure = -15,
+	UIver1NativeItemDisclosure = -15,
 	
-	UIlootopiaNativeItemContactAdd = -16
+	UIver1NativeItemContactAdd = -16
 };
 
 

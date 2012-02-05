@@ -16,23 +16,23 @@
 {
 	switch (type)
 	{
-		case UIlootopiaNativeItemInfoLight:
+		case UIver1NativeItemInfoLight:
 		{
 			return [UIButton buttonWithType:UIButtonTypeInfoLight];
 		}
-		case UIlootopiaNativeItemInfoDark:
+		case UIver1NativeItemInfoDark:
 		{
 			return [UIButton buttonWithType:UIButtonTypeInfoDark];
 		}
-		case UIlootopiaNativeItemDisclosure:
+		case UIver1NativeItemDisclosure:
 		{
 			return [UIButton buttonWithType:UIButtonTypeDetailDisclosure];
 		}
-		case UIlootopiaNativeItemContactAdd:
+		case UIver1NativeItemContactAdd:
 		{
 			return [UIButton buttonWithType:UIButtonTypeContactAdd];
 		}
-		case UIlootopiaNativeItemSpinner:
+		case UIver1NativeItemSpinner:
 		{
 			UIActivityIndicatorView *button = [[[UIActivityIndicatorView alloc] initWithActivityIndicatorStyle:UIActivityIndicatorViewStyleWhite] autorelease];
 			[button startAnimating];

@@ -9,9 +9,9 @@
 
 
 // A good bit of this code was derived from the Three20 project
-// and was customized to work inside lootopia
+// and was customized to work inside ver1
 //
-// All modifications by lootopia are licensed under 
+// All modifications by ver1 are licensed under 
 // the Apache License, Version 2.0
 //
 //

@@ -342,13 +342,13 @@
         NSLog(@"[WARN] Invalid mode for audio player... setting to default.");
         newMode = kAudioSessionCategory_SoloAmbientSound;
     }
-	NSLog(@"[WARN] 'lootopia.Media.Sound.audioSessionMode' is deprecated; use 'lootopia.Media.audioSessionMode'");
+	NSLog(@"[WARN] 'ver1.Media.Sound.audioSessionMode' is deprecated; use 'ver1.Media.audioSessionMode'");
 	[[TiMediaAudioSession sharedSession] setSessionMode:newMode];
 }
 
 -(NSNumber*)audioSessionMode
 {
-	NSLog(@"[WARN] 'lootopia.Media.Sound.audioSessionMode' is deprecated; use 'lootopia.Media.audioSessionMode'");
+	NSLog(@"[WARN] 'ver1.Media.Sound.audioSessionMode' is deprecated; use 'ver1.Media.audioSessionMode'");
     return [NSNumber numberWithUnsignedInteger:[[TiMediaAudioSession sharedSession] sessionMode]];
 }
 

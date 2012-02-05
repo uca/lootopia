@@ -540,10 +540,10 @@ bool KrollSetProperty(TiContextRef jsContext, TiObjectRef object, TiStringRef pr
 
 // forward declare these
 
-//@interface lootopiaObject : NSObject
+//@interface ver1Object : NSObject
 //@end
 
-@interface lootopiaObject (Private)
+@interface ver1Object (Private)
 -(NSDictionary*)modules;
 @end
 
@@ -561,9 +561,9 @@ void KrollPropertyNames(TiContextRef ctx, TiObjectRef object, TiPropertyNameAccu
 	{
 		id target = [o target];
 		
-		if ([o isKindOfClass:[lootopiaObject class]])
+		if ([o isKindOfClass:[ver1Object class]])
 		{
-			for (NSString *key in [[(lootopiaObject*)o modules] allKeys])
+			for (NSString *key in [[(ver1Object*)o modules] allKeys])
 			{
 				TiStringRef value = TiStringCreateWithUTF8CString([key UTF8String]);
 				TiPropertyNameAccumulatorAddName(propertyNames,value);
